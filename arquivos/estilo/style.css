@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+:root {
+  --c1: #FAFAFA;
+  --m13: #160A0B;
+  --corpo:'Work Sans', sans-serif;
+  --titulo: 'Spartan', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0px;
-  font-family: 'Work Sans', Arial, sans-serif;
-  color: #160A0B;
+  color: var(--m13);
 }
 
 h1, h2, h3, p {
   margin: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -19,4 +35,54 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  background: var(--c1);
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header-container {
+  max-width: 1200px;
+  padding: 44px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+
+.header-menu a {
+  display: block;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  color: var(--m13);
+  font-family: var(--titulo);
+}
+
+.header-menu-sobre, .header-menu-formacao, .header-menu-projetos{
+  position: relative;
+}
+
+.header-menu-sobre::after, .header-menu-formacao::after, .header-menu-projetos::after {
+  content: "";
+  display: block;
+  width: 1.1rem;
+  height: 1rem;
+  background-color: transparent;
+  border: 1px solid #160A0B;
+  border-radius: 6px;
+  position: absolute;
+  top: 1.5rem;
+  right: -2.2rem;
 }
