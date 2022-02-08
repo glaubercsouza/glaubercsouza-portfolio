@@ -9,10 +9,6 @@
   --titulo: 'Spartan', sans-serif;
 }
 
-html {
-  font-size: 10px;
-}
-
 body {
   margin: 0px;
   color: var(--m13);
@@ -64,8 +60,8 @@ img {
 
 .header-menu a {
   display: block;
-  font-size: 2rem;
-  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  padding: 10px 20px;
   color: var(--m13);
   font-family: var(--titulo);
 }
@@ -77,12 +73,12 @@ img {
 .header-menu-sobre::after, .header-menu-formacao::after, .header-menu-projetos::after {
   content: "";
   display: block;
-  width: 1.1rem;
-  height: 1rem;
+  width: 11px;
+  height: 10px;
   background-color: transparent;
   border: 1px solid #160A0B;
   border-radius: 6px;
   position: absolute;
-  top: 1.5rem;
-  right: -2.2rem;
+  top: 15px;
+  right: -22px;
 }
