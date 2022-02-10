@@ -57,7 +57,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  
 }
 
 .header-menu a {
@@ -66,6 +65,11 @@ img {
   padding: 10px 20px;
   color: var(--m13);
   font-family: var(--titulo);
+  border: 2px transparent solid;
+}
+
+.header-menu a:hover {
+  border-bottom: 2px var(--m13) solid;
 }
 
 .header-menu-sobre, .header-menu-formacao, .header-menu-projetos{
@@ -89,7 +93,7 @@ img {
   .header-container {
     padding: 30px 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     gap: 80px ;
   }
 
@@ -98,17 +102,7 @@ img {
     grid-template-columns: auto auto;
   }
 
-  .header-menu-sobre::after, .header-menu-projetos::after {
-    right: 10px;
-  }
-
-  .header-menu-formacao::after {
-    display: none;
-  }
-}
-
-@media (max-width: 950px) {
-  .header-menu-sobre::after, .header-menu-projetos::after {
+  .header-menu-sobre::after, .header-menu-projetos::after, .header-menu-formacao::after  {
     display: none;
   }
 }
@@ -140,7 +134,13 @@ img {
     display: inline-block;
     height: 20px;
     width: 110px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
   } 
+
+  .header-menu a:hover {
+    border-bottom: 2px transparent solid;
+    background: var(--c3);
+  }
 }
 
 @media (max-width: 400px) {
@@ -148,6 +148,7 @@ img {
   .header-container {
     gap: 20px;
   }
+
   .header-menu li a {
     font-size: 1rem;
     padding: 10px 15px;
