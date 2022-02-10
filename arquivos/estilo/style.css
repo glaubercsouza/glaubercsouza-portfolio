@@ -4,6 +4,8 @@
 
 :root {
   --c1: #FAFAFA;
+  --c2: #E5E5E5;
+  --c3: #CFCFCF;
   --m13: #160A0B;
   --corpo:'Work Sans', sans-serif;
   --titulo: 'Spartan', sans-serif;
@@ -81,4 +83,79 @@ img {
   position: absolute;
   top: 15px;
   right: -22px;
+}
+
+@media (max-width: 1050px) {
+  .header-container {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px ;
+  }
+
+  .header-menu {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .header-menu-sobre::after, .header-menu-projetos::after {
+    right: 10px;
+  }
+
+  .header-menu-formacao::after {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .header-menu-sobre::after, .header-menu-projetos::after {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .header-container a {
+    margin: 0px;
+    place-self: center;
+  }
+
+  .header-menu {
+    grid-template-columns: auto auto;
+  }
+
+  .header-menu-sobre, .header-menu-projetos{
+    justify-self: end;
+  }
+
+  .header-menu li a {
+    text-align: center;
+    background: var(--c2);
+    border-radius: 4px;
+    padding: 15px 20px;
+    display: inline-block;
+    height: 20px;
+    width: 110px;
+  } 
+}
+
+@media (max-width: 400px) {
+
+  .header-container {
+    gap: 20px;
+  }
+  .header-menu li a {
+    font-size: 1rem;
+    padding: 10px 15px;
+    height: 15px;
+    width: 80px;
+  } 
+
+  .header-menu {
+    gap: 20px;
+  }
 }
