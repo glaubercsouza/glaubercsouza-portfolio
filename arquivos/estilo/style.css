@@ -116,7 +116,7 @@ img {
 @media (max-width: 750px) {
   .header-container {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 30px;
   }
 
   .header-container a {
