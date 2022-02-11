@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
+  --a6: #4D5DAA;
   --c1: #FAFAFA;
   --c2: #E5E5E5;
   --c3: #CFCFCF;
@@ -36,6 +37,14 @@ ul {
 img {
   max-width: 100%;
   display: block;
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+.azul {
+  color: var(--a6);
 }
 
 /* Header */
@@ -171,14 +180,14 @@ img {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 20px;
 }
 
 .principal {
   max-width: 1200px;
+  height: 598px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 80px 0;
+  /* padding: 80px 0; */
   margin: 0 auto;
   gap: 50px;
   background: transparent url('../img/dec1.svg') no-repeat right;
@@ -187,7 +196,7 @@ main {
 }
 
 .principal-foto {
-  padding-right: 50px;
+  padding: 50px;
 }
 
 .principal-infos {
@@ -230,6 +239,12 @@ main {
   align-self: end;
 }
 
+@media (max-width: 1100px) {
+  .principal {
+    background-image: none;
+  }
+}
+
 @media (max-width: 1050px){
   .principal {
     padding: 60px 0;
@@ -258,10 +273,7 @@ main {
     line-height: 4rem;
   }
 
-  .principal {
-    background-image: none;
-    padding: 40px 0;
-  }
+  
 
   .principal-grid {
     gap: 10px;
@@ -344,4 +356,37 @@ main {
   .principal-cidade {
     font-size: 1rem;
   }
+}
+
+/* Sobre */
+
+.sobre {
+  max-width: 1200px;
+  height: 598px;
+  background: transparent url('../img/dec2.svg') no-repeat left;
+  background-origin: padding-box, content-box;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* padding: 260px 20px; */
+  gap: 50px;
+}
+
+.sobre h2 {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: bold;
+  place-self: center;
+}
+
+.sobre-texto {
+  font-family: var(--corpo);
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  place-self: center;
+}
+
+.sobre-texto p {
+  padding-bottom: 20px;
 }
