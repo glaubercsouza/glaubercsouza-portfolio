@@ -78,11 +78,13 @@ img {
   color: var(--m13);
   font-family: var(--titulo);
   border: 2px transparent solid;
+  
 }
 
 .header-menu a:hover {
   border-bottom: 2px var(--m1) solid;
   color: var(--m1);
+  transition: 0.8s;
 }
 
 .header-menu-sobre, .header-menu-formacao, .header-menu-projetos{
@@ -386,6 +388,7 @@ main {
   font-size: 1.25rem;
   line-height: 1.75rem;
   place-self: center;
+  padding-right: 20px;
 }
 
 .sobre-texto p {
