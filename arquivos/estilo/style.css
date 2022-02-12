@@ -242,12 +242,13 @@ main {
 @media (max-width: 1100px) {
   .principal {
     background-image: none;
+    height: auto;
   }
 }
 
 @media (max-width: 1050px){
   .principal {
-    padding: 60px 0;
+    padding: 0;
   }
 
   .principal-infos h1 {
@@ -363,7 +364,7 @@ main {
 .sobre {
   max-width: 1200px;
   height: 598px;
-  background: transparent url('../img/dec2.svg') no-repeat left;
+  background: transparent url('../img/dec2.svg') no-repeat left top;
   background-origin: padding-box, content-box;
   background-size: contain;
   display: grid;
@@ -389,4 +390,32 @@ main {
 
 .sobre-texto p {
   padding-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    padding: 40px 60px;
+    height: fit-content;
+  }
+
+  .sobre h2 {
+    padding: 20px;
+    font-size: 4rem;
+  }
+  
+  .sobre-texto {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .sobre {
+    gap: 20px;
+  }
+
+  .sobre h2 {
+    font-size: 3rem;
+  }
 }
