@@ -472,6 +472,7 @@ img {
   font-family: var(--corpo);
   line-height: 1.875rem;
   font-size: 1.375rem;
+  color: var(--m13);
 }
 
 .formacao-2 {
