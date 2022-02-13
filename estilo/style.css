@@ -82,7 +82,7 @@ img {
   font-size: 1.25rem;
   padding: 10px 20px;
   color: var(--m13);
-  font-family: var(--titulo);
+  font-family: "Spartan", sans-serif;
   border: 2px transparent solid;
 }
 
@@ -213,7 +213,7 @@ img {
 }
 
 .principal-infos h1 {
-  font-family: var(--titulo);
+  font-family: "Spartan", sans-serif;
   grid-column: 1 / -1;
   font-size: 4.5rem;
   line-height: 5rem;
@@ -228,7 +228,7 @@ img {
 }
 
 .principal p {
-  font-family: var(--titulo);
+  font-family: "Spartan", sans-serif;
   padding-right: 10px;
 }
 
@@ -390,7 +390,7 @@ img {
 }
 
 .sobre-texto {
-  font-family: var(--corpo);
+  font-family: "Work Sans", sans-serif;
   font-weight: normal;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -464,12 +464,12 @@ img {
   font-weight: bold;
   font-size: 1.375rem;
   line-height: 2rem;
-  font-family: var(--titulo);
+  font-family: "Spartan", sans-serif;
   color: var(--a6);
 }
 
 .formacao p {
-  font-family: var(--corpo);
+  font-family: "Work Sans", sans-serif;
   line-height: 1.875rem;
   font-size: 1.375rem;
   color: var(--m13);
