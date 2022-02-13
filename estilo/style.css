@@ -383,9 +383,10 @@ img {
 }
 
 .subtitulo {
+  font-family: var(--titulo);
   text-transform: uppercase;
   font-size: 4.5rem;
-  /* font-weight: 700; */
+  font-weight: 700;
   place-self: center;
 }
 
