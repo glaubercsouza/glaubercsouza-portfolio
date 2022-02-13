@@ -383,7 +383,7 @@ img {
 }
 
 .subtitulo {
-  font-family: var(--titulo);
+  font-family: "Spartan", sans-serif;
   text-transform: uppercase;
   font-size: 4.5rem;
   font-weight: 700;
