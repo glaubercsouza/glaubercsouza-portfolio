@@ -811,3 +811,26 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Contato */
+
+.contato span {
+  font-size: 1.75rem;
+  font-family: var(--titulo);
+}
+.contato img {
+  width: max-content;
+  align-self: center;
+}
+
+.contato-lista li{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 35px;
+}
+
+.contato-lista span {
+  text-align: left;
+  justify-self: left;
+}
