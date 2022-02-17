@@ -675,24 +675,25 @@ img {
 .projetos-sites li {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 10px;
+  grid-auto-rows: max-content;
 }
 
 .projetos-info {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  max-height: 24px;
 }
 
-.projetos-icones{
+.projetos-icones {
   gap: 5px;
   display: flex;
 }
 
-.projetos-icones img {
-  width: 24px;
-  height: 24px;
+.projetos-icones img{
+  max-width: 24px;
+  max-height: 24px;
 }
-
 
 .projetos-sites li h3 {
   font-family: var(--titulo);
@@ -702,26 +703,111 @@ img {
 .projetos-sites li p {
   font-family: var(--corpo);
   font-size: 1rem;
+  align-self: end;
 }
 
 .projetos-sites li a {
   position: relative;
-  width: 260px; /* Lembrar de trocar */
-  height: 159px;
+  align-self: start;
 }
 
-.projetos-sites li a::after {
-  content: "";
+.projetos-sites li a img{
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.18);
+}
+
+.projetos-lista a::after {
+  content: "55/00";
+  text-align: center;
+  padding: 1px;
+  font-family: var(--corpo);
   display: block;
   width: 67px;
-  height: 24px;
+  height: 20px;
   background-color: #160a0ba2;
   color: #fff;
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
   right: 20px;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
 
+.projeto-1 a::after {
+  content: "12/20";
+}
 
+.projeto-2 a::after {
+  content: "06/21";
+}
+
+.projeto-3 a::after {
+  content: "12/21";
+}
+
+.projeto-4 a::after {
+  content: "01/22";
+}
+
+@media (max-width: 1100px) {
+  .projetos {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1060px) {
+  .projetos-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+  }
+
+  .projetos-sites li h3, .projetos-sites li p  {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 1000px) {
+  .projetos {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+    gap: 0px;
+    height: max-content;
+  }
+
+  .projetos-lista {
+    grid-column: initial;
+    grid-row: initial;
+  }
+  .projetos-sites {
+    gap: 20px 20px;
+  }
+
+  .projetos-sites p {
+    max-width: 34ch;
+  }
+
+  .projetos-sites li {
+    justify-self: center;
+    max-width: max-content;
+  }
+}
+
+@media (max-width: 500px) {
+  .projetos-lista a::after {
+    width: 40px;
+    height: 15px;
+    font-size: 0.8rem;
+    right: 15px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .projetos-sites {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+}
