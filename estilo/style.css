@@ -4,6 +4,7 @@
 
 :root {
   --a6: #4d5daa;
+  --b1: #fff;
   --c1: #fafafa;
   --c2: #e5e5e5;
   --c3: #cfcfcf;
@@ -19,6 +20,7 @@
 body {
   margin: 0px;
   color: var(--m13);
+  background-color: var(--b1);
 }
 
 h1,
@@ -93,6 +95,10 @@ img {
   align-items: center;
 }
 
+.marca-dm {
+  display: none;
+}
+
 .header-menu {
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +134,7 @@ img {
   width: 11px;
   height: 10px;
   background-color: transparent;
-  border: 1px solid #160a0b;
+  border: 1px solid var(--m13);
   border-radius: 6px;
   position: absolute;
   top: 15px;
@@ -943,7 +949,7 @@ img {
 
 @media (max-width: 1200px) {
   .footer{
-    background-color: #fff;
+    background-color: var(--b1);
   }
 }
 
@@ -960,5 +966,37 @@ img {
 @media (max-width: 450px) {
   .footer p{
     font-size: .6rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --a6: #4d5daa;
+    --b1: #161B22;
+    --c1: #010409;
+    --c2: #161B22;
+    --c3: #161B22;
+    --m1: #aca3a3;
+    --m3: #737373;
+    --m8: #cfcfcf;
+    --m10: #e5e5e5;
+    --m13: #fafafa;
+  }
+
+  .marca-dm {
+    display: block;
+  }
+
+  .marca {
+    display: none;
+  }
+
+  .principal-estudos {
+    color: var(--m13);
+    text-shadow: 1px 1px 5px black;
+  }
+
+  h2 {
+    text-shadow: 1px 1px 5px black;;
   }
 }
