@@ -17,6 +17,10 @@
   --titulo: "Spartan", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   color: var(--m13);
