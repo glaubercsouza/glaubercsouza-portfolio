@@ -40,7 +40,7 @@ ul {
   list-style: none;
 }
 
-img {
+img, svg {
   max-width: 100%;
   display: block;
 }
@@ -88,11 +88,15 @@ img {
 
 .header-container {
   max-width: 1200px;
-  padding: 44px 20px;
+  padding: 30px 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.marca {
+  display: block;
 }
 
 .marca-dm {
@@ -250,6 +254,14 @@ img {
   padding-right: 10px;
 }
 
+.school-dm {
+  display: none;
+}
+
+.map-dm {
+  display: none;
+}
+
 .principal-estudos {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -343,6 +355,9 @@ img {
 @media (max-width: 580px) {
   .principal-infos h1 {
     font-size: 2.5rem;
+  }
+  .principal{
+    padding: 20px;
   }
 }
 
@@ -971,7 +986,7 @@ img {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --a6: #4d5daa;
+    --a6: #B1BBED;
     --b1: #161B22;
     --c1: #010409;
     --c2: #161B22;
@@ -985,9 +1000,25 @@ img {
 
   .marca-dm {
     display: block;
-  }
+  } 
 
   .marca {
+    display: none;
+  }
+
+  .school-dm {
+    display: block;
+  }
+
+  .school {
+    display: none;
+  }
+  
+  .map-dm {
+    display: block;
+  }
+
+  .map {
     display: none;
   }
 
