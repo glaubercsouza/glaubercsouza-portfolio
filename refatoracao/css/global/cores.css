@@ -1,18 +1,54 @@
 :root {
-  --a6: #4d5daa;
-  --b1: #fff;
-  --c1: #fafafa;
-  --c2: #e5e5e5;
-  --c3: #cfcfcf;
-  --m1: #aca3a3;
-  --m3: #8f7f80;
-  --m8: #463132;
-  --m10: #352021;
-  --m13: #160a0b;
+  --cor-p1: #4d5daa;
+  --cor-0: #ffffff;
+  --cor-1: #fafafa;
+  --cor-2: #e5e5e5;
+  --cor-3: #cfcfcf;
+  --cor-s1: #aca3a3;
+  --cor-s3: #8f7f80;
+  --cor-s8: #463132;
+  --cor-s10: #352021;
+  --cor-s13: #160a0b;
   --corpo: "Work Sans", sans-serif;
   --titulo: "Spartan", sans-serif;
 }
 
-.azul {
-  color: var(--a6);
+.cor-p1 {
+  color: var(--cor-p1);
+}
+
+.cor-0 {
+  color: var(--cor-0);
+}
+
+.cor-1 {
+  color: var(--cor-1);
+}
+
+.cor-2 {
+  color: var(--cor-2);
+}
+
+.cor-3 {
+  color: var(--cor-3);
+}
+
+.cor-s1 {
+  color: var(--cor-s1);
+}
+
+.cor-s3 {
+  color: var(--cor-s3);
+}
+
+.cor-s8 {
+  color: var(--cor-s8);
+}
+
+.cor-s10 {
+  color: var(--cor-s10);
+}
+
+.cor-s13 {
+  color: var(--cor-s13);
 }

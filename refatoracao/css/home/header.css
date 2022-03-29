@@ -32,36 +32,35 @@
   display: block;
   font-size: 1.25rem;
   padding: 10px 20px;
-  color: var(--m13);
   font-family: "Spartan", sans-serif;
   border: 2px transparent solid;
 }
 
 .header-menu a:hover {
   border-bottom: 2px var(--m1) solid;
-  color: var(--m1);
+  color: var(--cor-p1);
   transition: 0.8s;
 }
 
-.header-menu-sobre,
-.header-menu-formacao,
-.header-menu-projetos {
+.header-menu li {
   position: relative;
 }
 
-.header-menu-sobre::after,
-.header-menu-formacao::after,
-.header-menu-projetos::after {
+.header-menu li::before {
   content: "";
   display: block;
   width: 11px;
   height: 10px;
   background-color: transparent;
-  border: 1px solid var(--m13);
+  border: 1px solid var(--cor-s13);
   border-radius: 6px;
   position: absolute;
   top: 15px;
-  right: -22px;
+  left: -22px;
+}
+
+.header-menu li::before:first-child {
+  display: none;
 }
 
 @media (max-width: 1050px) {
