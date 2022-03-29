@@ -1,0 +1,48 @@
+.font-1-xxl-b {
+  font: 700 4.5rem/1.1 "Spartan", sans-serif;
+  text-transform: uppercase;
+}
+
+.font-1-xxl {
+  font: 700 4.5rem/1.1 "Spartan", sans-serif;
+}
+
+.font-1-xl {
+  font: 400 1.375rem/1.5 "Spartan", sans-serif;
+}
+
+.font-1-l {
+  font: 400 1.5rem/1.33 "Spartan", sans-serif;
+}
+
+.font-1-m {
+  font: 700 1.375rem/1.45 "Spartan", sans-serif;
+}
+
+.font-1-s {
+  font: 400 1.25rem/2 "Spartan", sans-serif;
+}
+
+.font-1-xs {
+  font: 400 1.25rem/1.1 "Spartan", sans-serif;
+}
+
+.font-1-xxs {
+  font: 400 1rem/1.5 "Spartan", sans-serif;
+}
+
+.font-1-xxs-b {
+  font: 700 1rem/1.5 "Spartan", sans-serif;
+}
+
+.font-2-l {
+  font: 400 1.25rem/1.5 "Work Sans", sans-serif;
+}
+
+.font-2-m {
+  font: 700 1.25rem/1.4 "Work Sans", sans-serif;
+}
+
+.font-2-s {
+  font: 400 1rem/1.5 "Work Sans", sans-serif;
+}

@@ -5,14 +5,91 @@
 .header {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   padding: 32px 0;
+  align-items: center;
 }
 
 .header-menu {
   display: flex;
-  gap: 60px;
+  flex-wrap: wrap;
+  gap: 48px;
 }
 
-.header-menu a:hover{
+.header-menu a {
+  display: inline-block;
+  padding: 16px 0px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.header-menu li {
+  position: relative;
+}
+
+.header-menu li::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--cor-s10);
+  position: absolute;
+  left: -30px;
+  top: 20px;
+}
+
+.header-menu li:first-child::before {
+  display: none;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: var(--cor-s3);
+  position: absolute;
+  bottom: 8px;
+  transition: 0.3s;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+.header-menu a:hover {
   color: var(--cor-s3);
+}
+
+@media (max-width: 850px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .header-menu {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .header-menu a {
+    border-radius: 12px;
+    padding: 16px;
+    background: var(--cor-2);
+  }
+
+  .header-menu li::before {
+    display: none;
+  }
+
+  .header-menu a::after {
+    display: none;
+  }
+
+  .header-menu a:hover {
+    color: initial;
+    background-color: var(--cor-3);
+  }
 }
