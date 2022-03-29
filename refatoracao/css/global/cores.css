@@ -1,0 +1,18 @@
+:root {
+  --a6: #4d5daa;
+  --b1: #fff;
+  --c1: #fafafa;
+  --c2: #e5e5e5;
+  --c3: #cfcfcf;
+  --m1: #aca3a3;
+  --m3: #8f7f80;
+  --m8: #463132;
+  --m10: #352021;
+  --m13: #160a0b;
+  --corpo: "Work Sans", sans-serif;
+  --titulo: "Spartan", sans-serif;
+}
+
+.azul {
+  color: var(--a6);
+}

@@ -1,0 +1,47 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --a6: #B1BBED;
+    --b1: #161B22;
+    --c1: #010409;
+    --c2: #161B22;
+    --c3: #161B22;
+    --m1: #aca3a3;
+    --m3: #737373;
+    --m8: #cfcfcf;
+    --m10: #e5e5e5;
+    --m13: #fafafa;
+  }
+
+  .marca-dm {
+    display: block;
+  } 
+
+  .marca {
+    display: none;
+  }
+
+  .school-dm {
+    display: block;
+  }
+
+  .school {
+    display: none;
+  }
+  
+  .map-dm {
+    display: block;
+  }
+
+  .map {
+    display: none;
+  }
+
+  .principal-estudos {
+    color: var(--m13);
+    text-shadow: 1px 1px 5px black;
+  }
+
+  h2 {
+    text-shadow: 1px 1px 5px black;;
+  }
+}

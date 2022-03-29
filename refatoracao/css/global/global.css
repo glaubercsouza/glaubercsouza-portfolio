@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  color: var(--m13);
+  background-color: var(--b1);
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img, svg {
+  max-width: 100%;
+  display: block;
+}
+
+.bg-1,
+.bg-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-1 {
+  height: 598px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background: transparent url("../../img/dec1.svg") no-repeat right;
+  background-size: contain;
+}
+
+.bg-2 {
+  max-width: 1200px;
+  height: 598px;
+  background: var(--c1) url("../../img/dec2.svg") no-repeat left top;
+  background-origin: padding-box, content-box;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  place-content: center;
+}
+

@@ -1,0 +1,140 @@
+.header {
+  width: 100%;
+  background: var(--c1);
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header-container {
+  max-width: 1200px;
+  padding: 30px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marca {
+  display: block;
+}
+
+.marca-dm {
+  display: none;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header-menu a {
+  display: block;
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  color: var(--m13);
+  font-family: "Spartan", sans-serif;
+  border: 2px transparent solid;
+}
+
+.header-menu a:hover {
+  border-bottom: 2px var(--m1) solid;
+  color: var(--m1);
+  transition: 0.8s;
+}
+
+.header-menu-sobre,
+.header-menu-formacao,
+.header-menu-projetos {
+  position: relative;
+}
+
+.header-menu-sobre::after,
+.header-menu-formacao::after,
+.header-menu-projetos::after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid var(--m13);
+  border-radius: 6px;
+  position: absolute;
+  top: 15px;
+  right: -22px;
+}
+
+@media (max-width: 1050px) {
+  .header-container {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 80px;
+  }
+
+  .header-menu {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+  }
+
+  .header-menu-sobre::after,
+  .header-menu-projetos::after,
+  .header-menu-formacao::after {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .header-container a {
+    margin: 0px;
+    place-self: center;
+  }
+
+  .header-menu {
+    grid-template-columns: auto auto;
+  }
+
+  .header-menu-sobre,
+  .header-menu-projetos {
+    justify-self: end;
+  }
+
+  .header-menu li a {
+    text-align: center;
+    background: var(--c2);
+    border-radius: 4px;
+    padding: 15px 20px;
+    display: inline-block;
+    height: 20px;
+    width: 110px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);
+  }
+
+  .header-menu a:hover {
+    border-bottom: 2px transparent solid;
+    background: var(--c3);
+  }
+}
+
+@media (max-width: 400px) {
+  .header-container {
+    gap: 20px;
+  }
+
+  .header-menu li a {
+    font-size: 1rem;
+    padding: 10px 15px;
+    height: 15px;
+    width: 80px;
+  }
+
+  .header-menu {
+    gap: 20px;
+  }
+}

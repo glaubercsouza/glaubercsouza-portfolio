@@ -1,0 +1,91 @@
+.cursos-lista,
+.idiomas-lista {
+  font-family: var(--corpo);
+  font-size: 1.125rem;
+  list-style: square;
+}
+
+.cursos-container h3 {
+  font-family: var(--titulo);
+  text-transform: uppercase;
+  color: var(--m13);
+  font-weight: normal;
+  font-size: 0.875rem;
+  margin: 80px 0px 10px 0px;
+}
+
+.cursos-lista li,
+.idiomas-lista li {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  color: var(--m13);
+  padding-right: 40px;
+  position: relative;
+}
+
+.cursos-lista li span,
+.idiomas-lista li span {
+  color: var(--m3);
+  text-align: right;
+  align-self: start;
+}
+
+.cursos-lista li::before,
+.idiomas-lista li:before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 10px;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #8693d4 0%, #b1bbed 100%);
+  position: absolute;
+  top: 6px;
+  left: -20px;
+}
+
+@media (max-width: 1100px) {
+  .cursos {
+    background-image: none;
+    height: auto;
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cursos {
+    grid-template-columns: 1fr;
+  }
+
+  .cursos-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .subtitulo {
+    padding: 20px;
+  }
+
+  .cursos-lista li,
+  .cursos-container h3,
+  .idiomas-lista li {
+    padding: 0px;
+  }
+
+  .cursos-container h3 {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 580px) {
+  .cursos {
+    padding: 40px;
+  }
+
+  .cursos-lista li,
+  .idiomas-lista li {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
+}
