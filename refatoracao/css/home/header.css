@@ -13,7 +13,7 @@
 .header-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px;
+  gap: 60px;
 }
 
 .header-menu a {
@@ -62,11 +62,13 @@
   color: var(--cor-s3);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .header {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .header-menu {
@@ -91,5 +93,11 @@
   .header-menu a:hover {
     color: initial;
     background-color: var(--cor-3);
+  }
+}
+
+@media (max-width: 450px) {
+  .header-menu li a {
+    font-size: 1rem;
   }
 }
