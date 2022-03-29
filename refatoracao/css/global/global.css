@@ -16,6 +16,7 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -54,5 +55,10 @@ img, svg {
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   place-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 

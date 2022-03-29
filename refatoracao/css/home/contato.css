@@ -1,4 +1,4 @@
-.contato a {
+/* .contato a {
   font-size: 1.5rem;
   font-family: var(--titulo);
   text-align: left;
@@ -7,7 +7,6 @@
 }
 
 .contato a:hover {
-  /* border-bottom: 2px var(--m1) solid; */
   color: var(--m1);
   transition: 0.3s;
 }
@@ -100,4 +99,4 @@
   .contato a {
     align-self: start;
   }
-}
+} */
