@@ -50,5 +50,7 @@ img, svg {
 @media (max-width: 1160px) {
   .bg-1, .bg-2 {
     background-image: none;
+    height: auto;
+    padding: 40px 20px;
   }
 }

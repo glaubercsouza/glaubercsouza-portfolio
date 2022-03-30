@@ -52,4 +52,43 @@
   .font-1-xxl {
     font-size: 3rem;
   }
+
+  .font-1-xl,
+  .font-1-m {
+    font-size: 1.2rem;
+  }
+
+  .font-1-l {
+    font-size: 1.3rem;
+  }
+
+  .font-1-s,
+  .font-1-xs,
+  .font-2-l,
+  .font-2-m  {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-1-xxl-b,
+  .font-1-xxl {
+    font-size: 2rem;
+  }
+
+  .font-1-xl,
+  .font-1-m {
+    font-size: 1rem;
+  }
+
+  .font-1-l {
+    font-size: 1.2rem;
+  }
+
+  .font-1-s,
+  .font-1-xs,
+  .font-2-l,
+  .font-2-m  {
+    font-size: 0.75rem;
+  }
 }
