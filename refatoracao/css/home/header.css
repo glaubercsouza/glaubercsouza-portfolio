@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 32px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   align-items: center;
 }
 
@@ -62,7 +63,7 @@
   color: var(--cor-s3);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1040px) {
   .header {
     display: grid;
     grid-template-columns: 1fr;

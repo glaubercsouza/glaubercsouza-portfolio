@@ -30,35 +30,26 @@ img, svg {
   display: block;
 }
 
-.bg-1,
-.bg-2 {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.bg-1 {
-  height: 598px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+.bg-1, .bg-2 {
   background: transparent url("../../img/dec1.svg") no-repeat right;
   background-size: contain;
 }
 
 .bg-2 {
-  max-width: 1200px;
-  height: 598px;
   background: var(--c1) url("../../img/dec2.svg") no-repeat left top;
   background-origin: padding-box, content-box;
   background-size: contain;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  place-content: center;
 }
 
 .container {
   max-width: 1200px;
+  padding: 0 20px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
+@media (max-width: 1160px) {
+  .bg-1, .bg-2 {
+    background-image: none;
+  }
+}
