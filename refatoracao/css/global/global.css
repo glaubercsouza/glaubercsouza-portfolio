@@ -33,12 +33,11 @@ img, svg {
 .bg-1, .bg-2 {
   background: transparent url("../../img/dec1.svg") no-repeat right;
   background-size: contain;
+  height: 600px;
 }
 
 .bg-2 {
-  background: var(--c1) url("../../img/dec2.svg") no-repeat left top;
-  background-origin: padding-box, content-box;
-  background-size: contain;
+  background: transparent url("../../img/dec2.svg") no-repeat left top;
 }
 
 .container {
