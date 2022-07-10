@@ -7,6 +7,7 @@
   grid-template-columns: 1fr 1fr;
   place-items: center;
   gap: 40px;
+  padding: 60px 40px;
 }
 
 .cursos-lista {
@@ -66,5 +67,7 @@
 
   .cursos-lista span {
     align-self: center;
+    justify-self: end;
+    text-align: right;
   }
 }

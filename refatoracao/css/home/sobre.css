@@ -8,13 +8,14 @@
   gap: 40px;
   align-content: center;
   place-items: center;
+  padding: 60px 40px;
 }
 
 .sobre-texto p:first-child {
   margin-bottom: 20px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1120px) {
   .sobre {
     grid-template-columns: 1fr;
   }

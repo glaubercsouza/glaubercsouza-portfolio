@@ -4,6 +4,11 @@
   gap: 40px;
   align-content: center;
   align-items: center;
+  padding: 60px 40px;
+}
+
+.formacao h2 {
+  text-align: center;
 }
 
 .formacao-cursos {

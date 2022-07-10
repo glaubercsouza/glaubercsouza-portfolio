@@ -78,9 +78,10 @@
   }
 
   .header-menu a {
-    border-radius: 12px;
+    border-radius: 2px;
     padding: 16px;
-    background: var(--cor-2);
+    background: transparent;
+    border: 1px solid var(--cor-s3);
   }
 
   .header-menu li::before {
@@ -92,8 +93,9 @@
   }
 
   .header-menu a:hover {
-    color: initial;
-    background-color: var(--cor-3);
+    color: var(--cor-p1);
+    background-color: var(--cor-p2);
+    border: 1px solid var(--cor-p1);
   }
 }
 

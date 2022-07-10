@@ -3,8 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 60px 40px;
 }
 
 .principal-imagem {
@@ -67,7 +66,7 @@
 @media (max-width: 850px) {
   .principal {
     grid-template-columns: 1fr;
-    padding-top: 40px;
+    padding: 40px;
   }
 
   .principal-imagem img {
