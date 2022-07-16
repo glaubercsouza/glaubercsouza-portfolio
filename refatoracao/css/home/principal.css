@@ -93,3 +93,9 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 360px) {
+  .principal-imagem {
+    display: none;
+  }
+}
