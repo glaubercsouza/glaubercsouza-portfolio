@@ -1,3 +1,40 @@
+.contato-bg {
+  background-color: var(--cor-1);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+}
+
+.contato a {
+  transition: 0.3s;
+}
+
+.contato a:hover {
+  color: var(--cor-p2);
+}
+
+.contato h2 {
+  place-self: center;
+}
+
+.contato-lista li {
+  display: grid;
+  grid-template-columns: 35px auto;
+  gap: 20px;
+}
+
+.contato-lista li + li {
+  margin-top: 40px;
+}
+
+.contato-lista li img {
+  justify-self: center;
+}
+
+
 /* .contato a {
   font-size: 1.5rem;
   font-family: var(--titulo);

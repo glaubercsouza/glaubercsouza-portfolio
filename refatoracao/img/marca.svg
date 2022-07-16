@@ -10,7 +10,7 @@
             }
           
              #glauber-svg:hover path.svg-g {
-              fill: #8F7F80
+              fill: #8693D4
               ;
             }
           </style>
